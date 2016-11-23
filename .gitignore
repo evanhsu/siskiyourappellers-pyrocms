@@ -1,0 +1,10 @@
+.env
+.coverage
+.vagrant
+composer.lock
+/bin
+/core
+/build
+/vendor
+/coverage
+/node_modules

@@ -1,0 +1,9 @@
+{
+    "name": "smirk/siskiyourappellers-theme",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Smirk\\SiskiyourappellersTheme\\": "src/"
+        }
+    }
+}
