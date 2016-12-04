@@ -7,7 +7,7 @@
     {% endblock %}
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body id="page-top" class="homepage" data-spy="scroll" data-target=".navbar-custom">
 
     <!-- Preloader -->
     <div id="preloader">
@@ -16,10 +16,9 @@
 
     {% include "theme::partials/navigation" %}
 
-    <div class="page-content">
-        {% include "theme::partials/posts" %}
-        {% include "theme::partials/footer" %}
-    </div>
+    {% block content %}{% endblock %}
+
+    {% include "theme::partials/footer" %}
 
     {% include "theme::partials/scripts" %}
 

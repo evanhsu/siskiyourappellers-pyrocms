@@ -1,9 +1,25 @@
-<div id="posts">
+<div id="posts" class="container">
+	
+	<div class="row">
+		<h2>Updates</h2>
+	</div>
+	<div class="row">
+	    {% set posts = entries('posts').recent().take(15).get() %}
 
-    {% set posts = entries('posts').recent().take(5).get() %}
+	    {# include "anomaly.module.posts::posts/partials/posts" with {"posts": posts} #}
 
-    {% include "anomaly.module.posts::posts/partials/posts" with {"posts": posts} %}
+	    {# posts.links|raw #}
 
-    {{ posts.links|raw }}
+	    {% for post in posts %}
+	    	<div class="post">
+		    	<div class="post-title">{{ post.title }}</div>
+		    	<div class="post-date">{{ post.created_at }}</div>
+		    	<div class="post-body">
+		    		{{ post.content | raw }}
+	    		</div>
+    		</div>
 
+	    {% endfor %}
+
+    </div>
 </div>

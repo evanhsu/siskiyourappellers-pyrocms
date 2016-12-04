@@ -22,6 +22,8 @@
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesBlogPagesEntryTranslationsModel' => '/var/www/storage/streams/src/models/Pages/PagesBlogPagesEntryTranslationsModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesDefaultPagesEntryModel' => '/var/www/storage/streams/src/models/Pages/PagesDefaultPagesEntryModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesDefaultPagesEntryTranslationsModel' => '/var/www/storage/streams/src/models/Pages/PagesDefaultPagesEntryTranslationsModel.php',
+  'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesHomePagesEntryModel' => '/var/www/storage/streams/src/models/Pages/PagesHomePagesEntryModel.php',
+  'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesHomePagesEntryTranslationsModel' => '/var/www/storage/streams/src/models/Pages/PagesHomePagesEntryTranslationsModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesPagesEntryModel' => '/var/www/storage/streams/src/models/Pages/PagesPagesEntryModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesPagesEntryTranslationsModel' => '/var/www/storage/streams/src/models/Pages/PagesPagesEntryTranslationsModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesTypesEntryModel' => '/var/www/storage/streams/src/models/Pages/PagesTypesEntryModel.php',
