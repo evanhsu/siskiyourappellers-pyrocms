@@ -1345,7 +1345,7 @@ CREATE TABLE `src_posts_default_posts` (
   `deleted_at` datetime DEFAULT NULL,
   `content` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1354,7 +1354,7 @@ CREATE TABLE `src_posts_default_posts` (
 
 LOCK TABLES `src_posts_default_posts` WRITE;
 /*!40000 ALTER TABLE `src_posts_default_posts` DISABLE KEYS */;
-INSERT INTO `src_posts_default_posts` VALUES (1,1,'2016-11-22 20:17:06',NULL,NULL,NULL,NULL,'<p>Welcome to PyroCMS!</p>'),(2,2,'2016-12-03 17:26:43',1,NULL,NULL,NULL,'<p>We\'re&nbsp;pulling the list on friday and then making selections by tuesday.</p>');
+INSERT INTO `src_posts_default_posts` VALUES (1,1,'2016-11-22 20:17:06',NULL,NULL,NULL,NULL,'<p>Welcome to PyroCMS!</p>'),(2,2,'2016-12-03 17:26:43',1,NULL,NULL,NULL,'<p>We\'re&nbsp;pulling the list on friday and then making selections by tuesday.</p>'),(3,3,'2016-12-05 06:14:37',1,'2016-12-05 06:15:30',1,NULL,'<p>We\'ll be taking a break for the winter - stay tuned for more news in <strong>January.</strong></p>\r\n<ol><li>List item 1</li><li>List item 2</li></ol>\r\n<p><img src=\"/files/images/banner-01.jpg\" style=\"width: 378px; height: 118px;\" width=\"378\" height=\"118\"><br></p>');
 /*!40000 ALTER TABLE `src_posts_default_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1375,7 +1375,7 @@ CREATE TABLE `src_posts_default_posts_translations` (
   `locale` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `posts_default_posts_translations_locale_index` (`locale`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1384,7 +1384,7 @@ CREATE TABLE `src_posts_default_posts_translations` (
 
 LOCK TABLES `src_posts_default_posts_translations` WRITE;
 /*!40000 ALTER TABLE `src_posts_default_posts_translations` DISABLE KEYS */;
-INSERT INTO `src_posts_default_posts_translations` VALUES (1,1,'2016-11-22 20:17:06',NULL,'2016-11-22 20:17:06',NULL,'en'),(2,2,'2016-12-03 17:26:44',NULL,'2016-12-03 17:26:44',1,'en');
+INSERT INTO `src_posts_default_posts_translations` VALUES (1,1,'2016-11-22 20:17:06',NULL,'2016-11-22 20:17:06',NULL,'en'),(2,2,'2016-12-03 17:26:44',NULL,'2016-12-03 17:26:44',1,'en'),(3,3,'2016-12-05 06:14:37',NULL,'2016-12-05 06:14:37',1,'en');
 /*!40000 ALTER TABLE `src_posts_default_posts_translations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1417,7 +1417,7 @@ CREATE TABLE `src_posts_posts` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `3205137b58c7608b77cb961242373242` (`str_id`),
   UNIQUE KEY `caf6c27189763021b0adb2df06ac215a` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1426,7 +1426,7 @@ CREATE TABLE `src_posts_posts` (
 
 LOCK TABLES `src_posts_posts` WRITE;
 /*!40000 ALTER TABLE `src_posts_posts` DISABLE KEYS */;
-INSERT INTO `src_posts_posts` VALUES (1,1,'2016-11-22 20:17:06',NULL,NULL,NULL,NULL,'C4A5NQiI8KSMM0yJ','welcome-to-pyrocms',1,'2016-11-22 20:17:06',1,1,'Anomaly\\Streams\\Platform\\Model\\Posts\\PostsDefaultPostsEntryModel',1,0,1,NULL),(2,2,'2016-12-03 17:26:44',1,NULL,NULL,NULL,'DXo0S7ovyfRE2d4U','hiring-update',1,'2016-12-03 17:25:00',1,2,'Anomaly\\Streams\\Platform\\Model\\Posts\\PostsDefaultPostsEntryModel',0,0,1,'a:0:{}');
+INSERT INTO `src_posts_posts` VALUES (1,1,'2016-11-22 20:17:06',NULL,NULL,NULL,NULL,'C4A5NQiI8KSMM0yJ','welcome-to-pyrocms',1,'2016-11-22 20:17:06',1,1,'Anomaly\\Streams\\Platform\\Model\\Posts\\PostsDefaultPostsEntryModel',1,0,1,NULL),(2,2,'2016-12-03 17:26:44',1,NULL,NULL,NULL,'DXo0S7ovyfRE2d4U','hiring-update',1,'2016-12-03 17:25:00',1,2,'Anomaly\\Streams\\Platform\\Model\\Posts\\PostsDefaultPostsEntryModel',0,0,1,'a:0:{}'),(3,3,'2016-12-05 06:14:37',1,'2016-12-05 06:15:30',1,NULL,'SzyPgLzjVCaXu44Y','winter-break',1,'2016-12-05 06:13:00',1,3,'Anomaly\\Streams\\Platform\\Model\\Posts\\PostsDefaultPostsEntryModel',0,0,1,'a:0:{}');
 /*!40000 ALTER TABLE `src_posts_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1452,7 +1452,7 @@ CREATE TABLE `src_posts_posts_translations` (
   `meta_keywords` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`),
   KEY `posts_posts_translations_locale_index` (`locale`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1461,7 +1461,7 @@ CREATE TABLE `src_posts_posts_translations` (
 
 LOCK TABLES `src_posts_posts_translations` WRITE;
 /*!40000 ALTER TABLE `src_posts_posts_translations` DISABLE KEYS */;
-INSERT INTO `src_posts_posts_translations` VALUES (1,1,'2016-11-22 20:17:06',NULL,'2016-11-22 20:17:06',NULL,'en','Welcome to PyroCMS!','This is an example post to demonstrate the posts module.',NULL,NULL,NULL),(2,2,'2016-12-03 17:26:44',NULL,'2016-12-03 17:26:44',1,'en','Hiring update','pulling the list on friday',NULL,NULL,'a:0:{}');
+INSERT INTO `src_posts_posts_translations` VALUES (1,1,'2016-11-22 20:17:06',NULL,'2016-11-22 20:17:06',NULL,'en','Welcome to PyroCMS!','This is an example post to demonstrate the posts module.',NULL,NULL,NULL),(2,2,'2016-12-03 17:26:44',NULL,'2016-12-03 17:26:44',1,'en','Hiring update','pulling the list on friday',NULL,NULL,'a:0:{}'),(3,3,'2016-12-05 06:14:37',NULL,'2016-12-05 06:14:37',1,'en','Winter break',NULL,NULL,NULL,'a:0:{}');
 /*!40000 ALTER TABLE `src_posts_posts_translations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2040,4 +2040,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-12-05  5:48:06
+-- Dump completed on 2016-12-05  6:16:51
