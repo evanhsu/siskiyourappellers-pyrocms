@@ -7,25 +7,31 @@
     {% endblock %}
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 
-{% include "theme::partials/navigation" %}
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="load"></div>
+    </div>
 
-<div id="content">
-    <div class="container">
-        {% include "theme::partials/breadcrumbs" %}
+    {% include "theme::partials/navigation" %}
+
+    <div class="page-content">
+        <section  class="banner" style="background-image: url('{{ page.banner_image.make.url }}');">
+            <div class="slogan">
+                <h2>{{ page.slogan_line_1 }}</h2>
+          </div>
+        </section>
+
         {% include "theme::partials/messages" %}
 
         {% block content %}{% endblock %}
 
-        {% if (request_path() == '/') %}
-            <hr> {% include "theme::partials/posts" %}
-        {% endif %}
-    </div>
-</div>
 
-{% include "theme::partials/footer" %}
-{# include "theme::partials/scripts" #}
+        {% include "theme::partials/footer" %}
+    </div>
+
+    {% include "theme::partials/scripts" %}
 
 </body>
 

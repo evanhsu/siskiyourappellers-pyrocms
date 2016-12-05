@@ -57,7 +57,7 @@ a:focus {
 }
 
 .page-content  {
-  margin-top: 90px;
+
 }
 
 .post {
@@ -82,7 +82,7 @@ a:focus {
 .navbar {
     margin-bottom: 40px;
     border-bottom: 1px solid rgba(255,255,255,.3);
-
+    background-color: rgba(0,0,0,.5);
 }
 
 .navbar-brand {
@@ -97,15 +97,11 @@ a:focus {
 }
 
 .navbar-brand h1 {
-  color: #555555;
+  color: #ffffff;
   font-size: 20px;
   line-height: 40px;
 }
 
-.homepage .navbar-brand h1, 
-.top-nav-collapse .navbar-brand h1 {
-  color: #fff;
-}
 
 .navbar-brand:focus {
     outline: 0;
@@ -397,7 +393,7 @@ width: auto;
 }
 
 .bgvideo {
-  background: url(../images/brownmountain.jpg) no-repeat;
+  background: url('../addons/src/smirk/siskiyourappellers-theme/resources/img/brownmountain.jpg') no-repeat;
   background-size: cover; 
   z-index: -10;
 }
@@ -408,25 +404,23 @@ width: auto;
     fill: black;
     opacity:0.7;
 }
-
-#intro.intro {
-  padding:20% 0 0 0;
-}
-
-#intro.banner {
+.banner {
   padding:20% 1em 1em 1em;
-  background: url(../images/banner-01.jpg) no-repeat;
   background-size: cover;
-}
-
-.intro .slogan {
-  text-align: center;
-  z-index: 1;
 }
 
 .banner .slogan {
   text-align: right;
   color: #ebebeb;
+}
+
+#intro.intro {
+  padding:20% 0 0 0;
+}
+
+.intro .slogan {
+  text-align: center;
+  z-index: 1;
 }
 
 .intro .page-scroll {
