@@ -1,0 +1,5 @@
+{% for link in links(page.menu).get() %}
+    <p>
+        <a href="{{ link.url }}">{{ link.title }}</a>
+    </p>
+{% endfor %}
