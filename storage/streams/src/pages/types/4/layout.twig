@@ -1,5 +1,14 @@
-{% for link in links(page.menu).get() %}
-    <p>
-        <a href="{{ link.url }}">{{ link.title }}</a>
-    </p>
+{% for menu in page.menus %}
+    <section class="linklist">
+    
+        <h3>{{ menu.name }}</h3>
+        <ul>
+        {% for link in links(menu).get() %}
+            <li>
+                <a href="{{ link.url }}"><strong>{{ link.title }}</strong> - {{ link.entry.description }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </section>
 {% endfor %}

@@ -4,7 +4,7 @@
 		<h2>Updates</h2>
 	</div>
 	<div class="row">
-	    {% set posts = entries('posts').recent().take(15).get() %}
+	    {% set posts = entries('posts').recent().take(25).get() %}
 
 	    {# include "anomaly.module.posts::posts/partials/posts" with {"posts": posts} #}
 

@@ -61,16 +61,19 @@
   }
 
   .post {
-    margin-bottom: 3em;
-    padding: .2em;
+    margin-bottom: 1em;
+    padding: .6em;
     border-left: 5px solid #777;
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 5px #dddddd;
   }
 
   .post .post-marker {
 
   }
   .post .post-title {
-    font-size: 1.5em;
+    font-family: "Oswald", "Trebuchet", sans-serif;
+    font-size: 2.5em;
     font-weight: bold;
     color: #777777;
     display: inline-block;
@@ -83,7 +86,8 @@
   }
 
   .post .post-body {
-
+    font-size: 1.2em;
+    font-family: "Montserrat";
   }
 
   .navbar {
@@ -329,21 +333,21 @@
     color: #fff;
   }
 
-  #linklist {
+  .linklist {
   width: 90%;
   border: none;
   background-color: #ffffff;
   margin: 10px auto 0 auto;
   }
 
-  #linklist h3 {
-  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  .linklist h3 {
+  font-family:"Oswald","Trebuchet MS", Arial, Helvetica, sans-serif;
   font-size: 2em;
   color: #444444;
   font-weight: bold;
   }
 
-  #linklist ul {
+  .linklist ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -351,22 +355,22 @@
   border: 2px solid #eeeeee;
   }
 
-  #linklist li {
+  .linklist li {
     margin: 0;
     border-bottom: 1px solid #eeeeee;
   }
 
-  #linklist li a {
+  .linklist li a {
     display: block;
     padding: 5px 5px 5px 0.5em;
     border-left: 5px solid #F93;
     border-right: 0px solid #882222;
     background-color: #ffffff;
     color: #666666;
-  } html>body #linklist li a {
+  } html>body .linklist li a {
   width: auto;
   }
-  #linklist li a:hover {
+  .linklist li a:hover {
     border-left: 5px solid #444;
     border-right: 0px solid #0C3;
     background-color: #777777;

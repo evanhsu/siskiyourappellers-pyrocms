@@ -16,18 +16,18 @@ class PagesLinkListPagesEntryModel extends EntryModel
     protected $rules = [
 'banner_image' => '',
 'slogan_line_1' => '',
-'menu' => '',
+'menus' => '',
 ];
 
     protected $fields = [
 'banner_image',
 'slogan_line_1',
-'menu',
+'menus',
 ];
 
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 
-    protected $relationships = ['banner_image', 'menu'];
+    protected $relationships = ['banner_image', 'menus'];
 
     
 
@@ -131,37 +131,37 @@ class PagesLinkListPagesEntryModel extends EntryModel
 ],
 ],
 [
-'id' => '142',
-'sort_order' => '140',
+'id' => '143',
+'sort_order' => '141',
 'stream_id' => '28',
-'field_id' => '126',
+'field_id' => '127',
 'config' => 'a:1:{i:0;s:6:"a:0:{}";}',
 'unique' => '0',
 'required' => '0',
 'translatable' => '0',
 'field' => [
-'id' => '126',
+'id' => '127',
 'namespace' => 'pages',
-'slug' => 'menu',
-'type' => 'anomaly.field_type.relationship',
-'config' => 'a:2:{s:7:"related";s:67:"Anomaly\Streams\Platform\Model\Navigation\NavigationMenusEntryModel";s:4:"mode";s:8:"dropdown";}',
+'slug' => 'menus',
+'type' => 'anomaly.field_type.multiple',
+'config' => 'a:4:{s:7:"related";s:67:"Anomaly\Streams\Platform\Model\Navigation\NavigationMenusEntryModel";s:4:"mode";s:4:"tags";s:3:"min";N;s:3:"max";N;}',
 'locked' => '0',
 'translations' => [
 [
-'id' => '126',
-'field_id' => '126',
+'id' => '127',
+'field_id' => '127',
 'locale' => 'en',
-'name' => 'Menu',
+'name' => 'Menus',
 'placeholder' => '',
 'warning' => '',
-'instructions' => 'Choose which list of links to display (edit the links in the Navigation section)',
+'instructions' => '',
 ],
 ],
 ],
 'translations' => [
 [
-'id' => '142',
-'assignment_id' => '142',
+'id' => '143',
+'assignment_id' => '143',
 'locale' => 'en',
 'label' => '',
 'warning' => '',
@@ -189,10 +189,10 @@ public function bannerImage()
 return $this->getFieldType('banner_image')->getRelation();
 }
 
-public function menu()
+public function menus()
 {
 
-return $this->getFieldType('menu')->getRelation();
+return $this->getFieldType('menus')->getRelation();
 }
 
 }
