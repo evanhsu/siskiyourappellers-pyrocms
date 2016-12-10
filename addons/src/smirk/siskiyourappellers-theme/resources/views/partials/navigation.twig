@@ -26,7 +26,7 @@
                 <li>
                     <a href="{{ url_route('anomaly.module.posts::posts.index') }}">Posts</a>
                 </li>
-            -->
+            
                 <li>
                     {% if auth_check() %}
                         <a href="{{ url_route('anomaly.module.users::logout') }}">Logout</a>
@@ -34,6 +34,7 @@
                         <a href="{{ url_route('anomaly.module.users::login') }}">Login</a>
                     {% endif %}
                 </li>
+            -->
             </ul>
 
         </div>

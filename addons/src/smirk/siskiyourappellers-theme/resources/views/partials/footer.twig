@@ -3,40 +3,46 @@
     <div class="footer-above">
         <div class="container">
             <div class="row">
-                <div class="footer-col col-md-4">
-                    <h3>PyroCMS</h3>
+                <div class="col-sm-4">
+                    <div class="widget-contact" style="text-align:right;">
 
-                    {#{{ menu('footer').listClass('list list-unstyled')|raw }}#}
+                        <address>
+                          <strong>The Siskiyou Rappel Crew</strong><br>
+                          657 Flaming Road<br>
+                          Grants Pass, OR 97526
+                        </address>
 
-                    {% for link in links('footer').get() %}
-                        <p>
-                            <a href="{{ link.url }}">{{ link.title }}</a>
-                        </p>
-                    {% endfor %}
+                        <address>
+                          <a href="mailto:dquinones@fs.fed.us">dquinones@fs.fed.us</a>
+                        </address>
+                        
+                        <address>
+                            <abbr title="Phone">P:</abbr> (541) 471-6891<br>
+                            <abbr title="Fax">F:</abbr> (541) 471-6849
+                        </address>
+                        
+                        <address>
+                            <ul class="company-social" style="text-align:right;">
+                                <li class="social-facebook"><a href="https://www.facebook.com/Siskiyou-Rappel-Crew-116587918401126/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </address>
 
+                        N42.50639°<br>
+                        W123.38243°<br>
+                        Airport Identifier: <a href="http://www.airnav.com/airport/3s8">3S8</a>
+
+                    </div>
                 </div>
-                <div class="footer-col col-md-4">
-                    <h3>Around the Web</h3>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="http://facebook.com/pyrocms" class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com/pyrocms" class="btn-social btn-outline">
-                                <i class="fa fa-fw fa-twitter"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>About Starter Theme</h3>
 
-                    <p>The Starter theme is based on the Freelance theme. A free to use, open source Bootstrap theme
-                        created by <a
-                                href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                <div class="col-sm-4">
+                    <div class="widget-contact">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1095.1777128784452!2d-123.384007896843!3d42.498581459857625!2m3!1f0!2f41.27362843638052!3f0!3m2!1i1024!2i768!4f20!3m3!1m2!1s0x0%3A0xab842e41bb1e2015!2sThe+Siskiyou+Rappel+Crew!5e1!3m2!1sen!2sus!4v1478498235484" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    
+
+                    </div>
                 </div>
+                <div class="col-sm-2"></div> 
             </div>
         </div>
     </div>
@@ -45,7 +51,7 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; Your Website {{ 'now'|date("Y") }}
+                    Copyright &copy; siskiyourappellers.com {{ 'now'|date("Y") }}
                 </div>
             </div>
 

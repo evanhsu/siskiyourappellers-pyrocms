@@ -24,6 +24,8 @@
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesDefaultPagesEntryTranslationsModel' => '/var/www/storage/streams/src/models/Pages/PagesDefaultPagesEntryTranslationsModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesHomePagesEntryModel' => '/var/www/storage/streams/src/models/Pages/PagesHomePagesEntryModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesHomePagesEntryTranslationsModel' => '/var/www/storage/streams/src/models/Pages/PagesHomePagesEntryTranslationsModel.php',
+  'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesJobsPagesEntryModel' => '/var/www/storage/streams/src/models/Pages/PagesJobsPagesEntryModel.php',
+  'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesJobsPagesEntryTranslationsModel' => '/var/www/storage/streams/src/models/Pages/PagesJobsPagesEntryTranslationsModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesLinkListPagesEntryModel' => '/var/www/storage/streams/src/models/Pages/PagesLinkListPagesEntryModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesLinkListPagesEntryTranslationsModel' => '/var/www/storage/streams/src/models/Pages/PagesLinkListPagesEntryTranslationsModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Pages\\PagesPagesEntryModel' => '/var/www/storage/streams/src/models/Pages/PagesPagesEntryModel.php',

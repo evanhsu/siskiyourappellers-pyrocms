@@ -295,14 +295,30 @@
   --- General sections
   ============================ */
 
+  .page-title {
+      margin: 5px 5px 10px 0px;
+      padding: 1em .5em;
+  }
+
   .home-section {
-      padding-top: 110px;
-      padding-bottom: 110px;
+      padding-top: 90px;
+      padding-bottom: 90px;
       display:block;
       position:relative;
       z-index:120;
   }
 
+  section {
+    padding: 0 3em 3em 3em;
+  }
+
+  section h1 {
+    font-family: "Oswald","Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-color: #e88e20;
+    margin: 5px 5px 10px 0px;
+    padding: 1em .5em;
+    font-size:30px;
+  }
 
   .section-heading h2 {
     font-size: 40px;
@@ -311,6 +327,14 @@
     margin-bottom: 20px;
   }
 
+  .job-list {
+  }
+
+  .job-list div {
+    padding: 0.5em;
+    border-left: 1px solid #eeeeee;
+    box-shadow: 5px 5px 5px #999999;
+  }
 
   /* --- section bg var --- */
 
@@ -340,7 +364,7 @@
   margin: 10px auto 0 auto;
   }
 
-  .linklist h3 {
+  .linklist h1 {
   font-family:"Oswald","Trebuchet MS", Arial, Helvetica, sans-serif;
   font-size: 2em;
   color: #444444;
@@ -577,9 +601,6 @@
     border-radius: 0;
   }
 
-  .widget-contact {
-    text-align: left;
-  }
 
 
   .company-social {
@@ -588,9 +609,6 @@
     margin-top: 10px;
   }
 
-  .company-social {
-    text-align: left;
-  }
 
   .company-social li{
       display: inline-block;
@@ -616,6 +634,7 @@
     text-align: center;
     margin:0;
     padding:0;
+    color: #fff;
   }
   .company-social .social-facebook a{background: #3873ae;}
   .company-social .social-twitter a{background: #62c6f8;}
@@ -630,7 +649,15 @@
   .company-social .social-google a:hover{background: #333;}
   .company-social .social-vimeo a:hover{background: #71c6f3;}
 
+  .widget-contact {
+    color: white;
+  }
 
+  .widget-contact a,
+  .widget-contact a:visited,
+  .widget-contact a:active {
+    color: gray;
+  }
 
   /* ===========================
   --- Footer
