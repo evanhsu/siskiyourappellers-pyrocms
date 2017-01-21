@@ -1,11 +1,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="The Siskiyou Rappel Crew">
+<meta name="author" content="Evan Hsu, Smirk Software">
 
 <title>
-    {{ config_get("streams::distribution.name") }}  &#8250; {{ trans(template.meta_title) }}
+    {{ trans(template.meta_title) }} &#8250; {{ config_get('app.name') }}
 </title>
 
 {{ asset_add("theme.css", "theme::css/bootstrap.css") }}
@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-
+<link rel="icon" src={{ asset_url("theme::img/favicon.ico") }} type="image/x-icon" />
 {{ asset_style("theme.css") }}
 
 
