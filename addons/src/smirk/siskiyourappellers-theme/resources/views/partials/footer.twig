@@ -8,22 +8,21 @@
 
                         <address>
                           <strong>The Siskiyou Rappel Crew</strong><br>
-                          657 Flaming Road<br>
-                          Grants Pass, OR 97526
+                          {{ variable('contact','street_address') }}
                         </address>
 
                         <address>
-                          <a href="mailto:dquinones@fs.fed.us">dquinones@fs.fed.us</a>
+                          <a href="mailto:{{ variable('contact','email') }}">{{ variable('contact','email') }}</a>
                         </address>
                         
                         <address>
-                            <abbr title="Phone">P:</abbr> (541) 471-6891<br>
-                            <abbr title="Fax">F:</abbr> (541) 471-6887
+                            <abbr title="Phone">P:</abbr>{{ variable('contact', 'phone') }}<br>
+                            <abbr title="Fax">F:</abbr>{{ variable('contact', 'fax') }}
                         </address>
                         
                         <address>
                             <ul class="company-social" style="text-align:right;">
-                                <li class="social-facebook"><a href="https://www.facebook.com/Siskiyou-Rappel-Crew-116587918401126/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li class="social-facebook"><a href="{{ variable('contact', 'facebook_page_url') }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             </ul>
                         </address>
 

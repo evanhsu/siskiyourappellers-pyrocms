@@ -1,0 +1,18 @@
+<div id="gallery" class="container">
+    {% set posts = entries('posts').type('photo').where('enabled',1).orderBy('publish_at', 'desc').paginate(15) %}
+
+    {# include "anomaly.module.posts::posts/partials/posts" with {"posts": posts} #}
+
+    {% for post in posts %}
+    	<div class="photo-wrapper">
+    		<a href="{{ url_to(post.path) }}">
+	    		<img src="{{ post.photo.make.url }}" class="img-thumbnail" />
+	    		<div class="photo-thumbnail-title">{{ post.title }}</div>
+    		</a>
+		</div> 
+    {% endfor %}
+</div>
+
+<div class="pagination-wrapper">
+	{{ posts.links|raw }}
+</div>

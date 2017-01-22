@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block metadata deferred %}
+    {% include "theme::partials/metadata" %}
+    {% endblock %}
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="load"></div>
+    </div>
+
+    {% include "theme::partials/navigation" %}
+
+    <div class="page-content">
+        <section  class="banner" style="background-image: url('{{ page.banner_image.make.url }}');">
+            <div class="slogan">
+                <h2>{{ page.slogan_line_1 }}</h2>
+          </div>
+        </section>
+
+        {% include "theme::partials/messages" %}
+
+        {% block content %}{% endblock %}
+
+        {% include "theme::partials/gallery" %}
+        {% include "theme::partials/footer" %}
+    </div>
+
+    {% include "theme::partials/scripts" %}
+
+</body>
+
+</html>

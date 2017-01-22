@@ -9,11 +9,11 @@
 
 
 <!-- Custom Theme JavaScript -->
+{{ asset_add("theme.js", "theme::js/wow.min.js") }}
 {{ asset_add("theme.js", "theme::js/freelancer.js") }}
 {{ asset_add("theme.js", "theme::js/vendor/jquery.scrollTo.js") }}
-{{ asset_add("theme.js", "theme::js/wow.min.js") }}
 
-{{ asset_script("theme.js", ["min"]) }}
+{{ asset_script("theme.js") }}
 
 <!-- After the theme.js assets -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>

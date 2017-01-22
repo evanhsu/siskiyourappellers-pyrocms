@@ -90,6 +90,30 @@
     font-family: "Montserrat";
   }
 
+  #gallery {
+    width: 100%;
+  } 
+
+  .photo-wrapper {
+    float: left;
+    width: 250px;
+    margin: 10px;
+  }
+
+  .photo-title {
+    font-size: 2em;
+  }
+
+  .photo-thumbnail-title {
+    font-size: 1.2em;
+    font-style: italic;
+  }
+
+  #photo-single {
+    width: 100%;
+    text-align: center;
+  }
+
   .navbar {
       margin-bottom: 40px;
       border-bottom: 1px solid rgba(255,255,255,.3);
@@ -291,6 +315,14 @@
   .marginbot-40{margin-bottom:40px !important;}
   .marginbot-50{margin-bottom:50px !important;}
 
+  .pagination-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pagination {
+    margin: 0 auto 0 auto;
+  }
   /* ===========================
   --- General sections
   ============================ */
@@ -569,6 +601,10 @@
 
   .service-icon {
     margin-bottom: 20px;
+  }
+  .service-icon img {
+    height: 48px;
+    width: 48px;
   }
 
 
