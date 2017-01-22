@@ -14,6 +14,7 @@
   'Anomaly\\Streams\\Platform\\Model\\Navigation\\NavigationMenusEntryModel' => '/var/www/storage/streams/src/models/Navigation/NavigationMenusEntryModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Navigation\\NavigationLinksEntryModel' => '/var/www/storage/streams/src/models/Navigation/NavigationLinksEntryModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Variables\\VariablesContactEntryModel' => '/var/www/storage/streams/src/models/Variables/VariablesContactEntryModel.php',
+  'Anomaly\\Streams\\Platform\\Model\\Variables\\VariablesDefaultsEntryModel' => '/var/www/storage/streams/src/models/Variables/VariablesDefaultsEntryModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Posts\\PostsPostsEntryTranslationsModel' => '/var/www/storage/streams/src/models/Posts/PostsPostsEntryTranslationsModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Posts\\PostsDefaultPostsEntryTranslationsModel' => '/var/www/storage/streams/src/models/Posts/PostsDefaultPostsEntryTranslationsModel.php',
   'Anomaly\\Streams\\Platform\\Model\\Posts\\PostsLinkPostsEntryModel' => '/var/www/storage/streams/src/models/Posts/PostsLinkPostsEntryModel.php',
