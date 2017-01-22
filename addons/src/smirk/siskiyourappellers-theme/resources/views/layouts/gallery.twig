@@ -17,9 +17,20 @@
     {% include "theme::partials/navigation" %}
 
     <div class="page-content">
-        <section  class="banner" style="background-image: url('{{ page.banner_image.make.url }}');">
+        {% if page.banner_image %}
+            <section  class="banner" style="background-image: url('{{ page.banner_image.make.url }}');">
+        {% else %}
+            <section  class="banner" style="background-image: url('{{ variable('defaults', 'banner_image').make.url }}');">
+        {% endif %}
+        
             <div class="slogan">
-                <h2>{{ page.slogan_line_1 }}</h2>
+                <h2>
+                {% if page.slogan_line_1 %}
+                    {{ page.slogan_line_1 }}
+                {% else %}
+                    {{ variable('defaults', 'slogan') }}
+                {% endif %}
+                </h2>
           </div>
         </section>
 
